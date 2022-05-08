@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scratch Game"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/startApp3DBanner"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Play"
+        android:id="@+id/buttonFirstPlay"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/mainScoreBoard"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:text="Score Board"
+        android:layout_below="@+id/buttonFirstPlay"
+        android:layout_centerHorizontal="true"/>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <com.startapp.android.publish.banner.banner3d.Banner3D
+        android:id="@+id/startApp3DBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingRight="7dp"
+    android:paddingLeft="7dp"
+    android:paddingTop="7dp">
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Score Board"
+       android:gravity="center"
+       android:textSize="27sp"
+       android:textColor="@android:color/white"
+       android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/listViewHeader"
+        android:gravity="center_vertical"
+        android:background="#176bf5"
+        android:layout_below="@+id/textView2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="No"
+            android:id="@+id/t1" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Image"
+            android:id="@+id/t2" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="True Ans"
+            android:id="@+id/t3" />
+
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Player Ans"
+            android:textColor="@android:color/white"
+            android:id="@+id/t4" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Score"
+            android:id="@+id/t5" />
+
+
+        </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/subScoreBordListView"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/listViewHeader"
+        android:layout_above="@+id/linearLayout2"></ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:id="@+id/linearLayout2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:background="@drawable/button_click_main"
+            android:textColor="@android:color/white"
+            android:id="@+id/buttonCancel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Save"
+            android:background="@drawable/button_click_main"
+            android:textColor="@android:color/white"
+            android:id="@+id/buttonSave" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

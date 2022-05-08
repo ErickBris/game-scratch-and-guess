@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="9.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scorelabel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/score_lebal"/>
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/scorelabel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/textViewcounter"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No : "
+            android:id="@+id/textViewNo"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/textViewcounter"
+            android:layout_toStartOf="@+id/textViewcounter" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score : "
+                android:id="@+id/textView3"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textViewTotalScore"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.8"
+        android:layout_margin="10dp"
+        android:padding="7dp"
+
+        android:background="@drawable/scratchview">
+
+     <!--   <TextView
+            android:textSize="50.0sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:id="@+id/questionText"
+            android:layout_width="341dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_gravity="center"
+            android:text="aaaaaa" />-->
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/extra"/>
+
+
+        <gt.scratchgame.WScratchView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scratch_view"
+            android:layout_centerInParent="true" />
+
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg"
+            android:text="ddddddddd"
+            android:layout_gravity="center" />-->
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="7.8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3.0">
+
+            <Button
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/gameActivityButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_click_main"
+                android:textColor="@android:color/white"
+                android:text="mic"
+                android:layout_weight="1.0" />
+
+            <Button
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/gameActivityButton2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_click_main"
+                android:textColor="@android:color/white"
+
+                android:text="mic"
+                android:layout_weight="1.0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3.0">
+
+            <Button
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/gameActivityButton3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_click_main"
+                android:textColor="@android:color/white"
+                android:text="mic"
+                android:layout_weight="1.0" />
+
+            <Button
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/gameActivityButton4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_click_main"
+                android:textColor="@android:color/white"
+                android:text="mic"
+                android:layout_weight="1.0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="9.4">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+
+</LinearLayout>

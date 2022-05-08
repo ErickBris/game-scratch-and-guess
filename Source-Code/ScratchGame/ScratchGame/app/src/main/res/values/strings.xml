@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scratch And Guess</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="score_lebal">Score : </string>
+    <string name="score_label">sssssss</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>

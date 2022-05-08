@@ -1,0 +1,10 @@
+
+.leftpart > a {
+  background: none repeat scroll 0 0 lightblue;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.leftpart {
+  height: 50px;
+}
